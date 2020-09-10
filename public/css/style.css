@@ -1,0 +1,75 @@
+body {
+  margin: 0px;
+}
+
+h1 {
+  color: white;
+  margin: 0px 10px; 
+  position: relative;
+	top: 17px;
+}
+
+#header {
+	background-color: #00204E;
+	height: 80px;
+}
+
+#search {
+  background-color: black;
+  padding: 10px;
+}
+
+label {
+  color: white;
+}
+
+button {
+  background-color: black;
+  color: rgb(255, 227, 227);
+  border: none;
+  outline: none;
+  float: right;
+}
+
+input {
+  border-radius: 25px;
+  outline: none;
+}
+
+button:hover {
+  color: Gold;
+	text-decoration: none;
+}
+
+#map {
+  height: 400px;
+  width: 45%;
+  float: right;
+  margin: 10px;
+	margin-top: 10px;
+	padding: 20px;
+}
+
+#storesInfo {
+  overflow: auto;
+  height: 500px;
+  margin: 10px;
+}
+
+.store {
+  background-color: #e5e5e5;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px; 
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+	border-radius: 10px;
+}
+
+#footer {
+	background-color: #00204E;
+	height: 70px;
+	clear: both; /* To ensure footer goes on the bottom */
+}

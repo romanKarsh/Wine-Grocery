@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Google Wine Grocery API</title>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNE8ra33VdPivhkt-Lh1bl03KJQ2pRSlA&libraries=&v=weekly"
+    defer></script>
+  <script src="https://unpkg.com/@google/markerclustererplus@5.1.0/dist/markerclustererplus.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body>
+  <div id='main'>
+    <div id="header">
+      <h1> Find Wine Grocery Near You </h1>
+    </div>
+    <div id="search">
+      <label> Enter your address </label>
+      <input type="text" id="locationTxt" size="40" />
+      <label for="quantity"> Number of Stores to show (1-20) </label>
+      <input type="number" id="numStores" name="quantity" min="1" max="20">
+      <label> Show Closed Stores </label>
+      <input type="checkbox" id="showClosed" name="showClosed" value="op">
+      <button onclick='initMap()'> Search </button>
+    </div>
+    <div id="map"> </div>
+    <div id='storesInfo'> </div>
+    <div id="footer"> </div>
+  </div>
+</body>
+<script type="text/javascript" src="./js/googleMaps.js"></script>
+
+</html>
