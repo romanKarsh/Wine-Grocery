@@ -81,12 +81,12 @@ function extractTime(str) {
   if (!str.includes(":")) {
     let i = 0;
     while (str[i] >= '0' && str[i] <= '9') { i++; }
-    return str.includes("a.m.") || str.includes("am") || str.includes("AM") || str.includes("A.M.")
+    return (str.includes("a.m.") || str.includes("am") || str.includes("AM") || str.includes("A.M.")) && parseInt(str.slice(0, i)) !== 12
       ? parseInt(str.slice(0, i)) : parseInt(str.slice(0, i)) + 12;
   } else {
     let i = 0;
     while (str[i] >= '0' && str[i] <= '9') { i++; }
-    const hours = str.includes("a.m.") || str.includes("am") || str.includes("AM") || str.includes("A.M.")
+    const hours = (str.includes("a.m.") || str.includes("am") || str.includes("AM") || str.includes("A.M.")) && parseInt(str.slice(0, i)) !== 12
       ? parseInt(str.slice(0, i)) : parseInt(str.slice(0, i)) + 12;
     let j = i + 1;
     while (str[j] >= '0' && str[j] <= '9') { j++; }
